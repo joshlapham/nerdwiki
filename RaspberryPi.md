@@ -76,3 +76,5 @@ shairport -a 'Shairport Test'
 sudo update-rc.d shairport defaults
 sudo service shairport start
 ```
+
+May also need to adjust sound volume: `alsamixer`
