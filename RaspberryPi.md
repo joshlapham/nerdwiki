@@ -24,6 +24,10 @@ Edit `/boot/config.txt` to add: `gpu_mem=64`
 - https://github.com/pivpn/pivpn/issues/66
 - https://github.com/pivpn/pivpn/wiki/FAQ#installing-with-pi-hole
 
+Edit `/etc/dnsmasq.conf`:
+
+`listen-address=127.0.0.1, 192.168.1.88, 10.8.0.1`
+
 ### Adding Routes
 
 Default install has IP range of `10.8.0.0`, but our internal network might be a diffrent range. Edit `/etc/openvpn/server.conf`:
