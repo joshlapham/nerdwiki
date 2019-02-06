@@ -15,3 +15,12 @@
 ### Decrypt
 
 `gpg -d file.txt.asc`
+
+
+### Export Public Key
+
+`gpg --export --armor $EMAIL > $EMAIL.asc`
+
+### Import Public Key
+
+`gpg --import $EMAIL.asc`
