@@ -57,3 +57,11 @@ Restart Samba with `sudo /etc/init.d/samba restart` after editing.
      read only = yes
 
 Then restart Samba.
+
+## Ubuntu 16.04
+
+Restart service: `service smbd restart`
+
+Edit config: `/etc/samba/smb.conf`
+
+Mount Samba share (`/etc/fstab`): `//$REMOTE_IP/$PATH /mnt/$PATH cifs guest,uid=1000 0 0`
