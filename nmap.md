@@ -24,6 +24,10 @@
 
 `nmap -sT -PN -n -sV -p 22,80,143,25 nameofdomain.com`
 
+### Scan for certain port
+
+`nmap -sU 192.168.1.1 -p 1194`
+
 ## Ultimate nmap scan
 
 Stolen from - http://richrines.com/post/10886870567/ultimate-nmap-scan
