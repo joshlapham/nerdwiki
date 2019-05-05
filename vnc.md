@@ -1,4 +1,21 @@
-## Autostart VNC server
+## Ubuntu
+
+### Server
+
+```
+sudo apt install x11vnc
+x11vnc -storepasswd
+x11vnc -auth guess -forever -loop -noxdamage -repeat -rfbauth /home/jl/.vnc/passwd -rfbport 5900 -shared
+```
+
+### Client
+
+```
+sudo apt install vncviewer
+vncviewer
+```
+
+## Debian
 
 Tested on Debian Wheezy.
 
