@@ -1,5 +1,7 @@
 ## Ubuntu
 
+See [Ubuntu documentation page](https://help.ubuntu.com/community/VNC/Servers) for more info.
+
 ### Server
 
 ```
