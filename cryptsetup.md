@@ -4,6 +4,8 @@
 
 Tested using Ubuntu 16.04
 
+Assumes a drive path of `/dev/sdf`; and a drive label of `DriveName`
+
 Partition & erase drive:
 
 ```
@@ -28,6 +30,12 @@ Erase partiton:
 
 ```
 sudo mkfs.ext4 /dev/mapper/DriveName -L DriveName
+```
+
+(Optional if using `ext4` filesystem) Get rid of reserved space on drive:
+
+```
+sudo tune2fs -m 0 /dev/mapper/DriveName
 ```
 
 Finally, eject drive and re-mount.
