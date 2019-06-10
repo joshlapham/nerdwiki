@@ -61,3 +61,23 @@ push "route 10.0.2.0 255.255.254.0"
 #push "route 10.8.0.0 255.255.254.0"
 #push "route 10.0.2.0 255.255.255.0"
 ```
+
+## piVPN
+
+### Renew Certificate
+
+To check the expiration date:
+
+```
+cd /etc/openvpn
+sudo openssl crl -in crl.pem -text
+```
+
+To renew it:
+
+```
+cd /etc/openvpn/easy-rsa
+sudo ./easyrsa gen-crl
+sudo cp pki/crl.pem /etc/openvpn/crl.pem
+sudo systemctl restart openvpn
+```
