@@ -14,26 +14,6 @@ Edit `/boot/config.txt` to add: `gpu_mem=64`
 
 # Other
 
-## PiVPN & pi-hole
-
-- http://www.pivpn.io/
-- https://pi-hole.net/
-
-### Ad Blocking When Using VPN
-
-- https://github.com/pivpn/pivpn/issues/66
-- https://github.com/pivpn/pivpn/wiki/FAQ#installing-with-pi-hole
-
-Edit `/etc/dnsmasq.conf`:
-
-`listen-address=127.0.0.1, 192.168.1.88, 10.8.0.1`
-
-### Adding Routes
-
-Default install has IP range of `10.8.0.0`, but our internal network might be a diffrent range. Edit `/etc/openvpn/server.conf`:
-
-`push "route 192.168.1.0 255.255.255.0"`
-
 ## Shairport
 
 Instructions 'borrowed' from [this blog post](http://www.raspberry-pi-geek.com/Archive/2015/09/Using-the-Raspberry-Pi-as-an-AirPlay-server).
